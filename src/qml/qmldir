@@ -1,3 +1,0 @@
-module QtQuick.CuteKeyboard
-InputPanel 1.0 InputPanel.qml
-plugin cutekeyboardplugin

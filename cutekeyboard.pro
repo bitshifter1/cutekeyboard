@@ -1,8 +1,22 @@
-TEMPLATE = subdirs
+TEMPLATE = lib
+CONFIG += plugin c++11
+QT += core gui qml quick
 
-SUBDIRS = src
+TARGET = cutekeyboardplugin
+DESTDIR = $$[QT_INSTALL_PLUGINS]/platforminputcontexts
 
-contains(CONFIG, BUILD_EXAMPLES) {
-    SUBDIRS += example
-    example.depends += src
-}
+HEADERS += \
+    src/cutekeyboardplugin.h \
+    src/cutekeyboardinputcontext.h
+
+SOURCES += \
+    src/cutekeyboardplugin.cpp \
+    src/cutekeyboardinputcontext.cpp
+
+DISTFILES += \
+    src/cutekeyboard.json
+
+# Install QML files
+qml.files = qml/*
+qml.path = $$[QT_INSTALL_QML]/CuteKeyboard
+INSTALLS += qml
