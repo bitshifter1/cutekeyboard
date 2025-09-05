@@ -1,3 +1,39 @@
 module QtQuick.CuteKeyboard
+
+# Main input panel
 InputPanel 1.0 InputPanel.qml
-plugin cutekeyboardplugin
+
+# Keys
+Key 1.0 Key.qml
+KeyModel 1.0 KeyModel.qml
+KeyPopup 1.0 KeyPopup.qml
+BackspaceKey 1.0 BackspaceKey.qml
+EnterKey 1.0 EnterKey.qml
+LanguageKey 1.0 LanguageKey.qml
+ShiftKey 1.0 ShiftKey.qml
+SpaceKey 1.0 SpaceKey.qml
+SymbolKey 1.0 SymbolKey.qml
+HideKey 1.0 HideKey.qml
+
+# Popup
+AlternativeKeysPopup 1.0 AlternativeKeysPopup.qml
+
+# Layouts
+DigitsLayout 1.0 DigitsLayout.qml
+QwertyLayout 1.0 QwertyLayout.qml
+EnLayout 1.0 EnLayout.qml
+PtLayout 1.0 PtLayout.qml
+UkLayout 1.0 UkLayout.qml
+DeLayout 1.0 DeLayout.qml
+EsLayout 1.0 EsLayout.qml
+FrLayout 1.0 FrLayout.qml
+ItLayout 1.0 ItLayout.qml
+NlLayout 1.0 NlLayout.qml
+PlLayout 1.0 PlLayout.qml
+RuLayout 1.0 RuLayout.qml
+SvLayout 1.0 SvLayout.qml
+ElLayout 1.0 ElLayout.qml
+CsLayout 1.0 CsLayout.qml
+CySrBsLayout 1.0 CySrBsLayout.qml
+LtSrHrBsLayout 1.0 LtSrHrBsLayout.qml
+
